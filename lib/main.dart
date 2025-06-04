@@ -11,6 +11,8 @@ import 'package:proj_bloc/user_repository.dart';
 
 import 'model/user_model.dart';
 
+
+
 void main() {
   runApp(const MyApp());
 }
@@ -51,18 +53,27 @@ class MyApp extends StatelessWidget {
           ),
         ),
         listTileTheme: ListTileThemeData(
+
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           tileColor: Colors.white,
           textColor: Colors.black,
           iconColor: Colors.deepPurple,
+
         ),
+
+
       );
+
 
        return MaterialApp(
       title: 'Flutter Demo',
+
+
       theme: _lightTheme,
     darkTheme: ThemeData.dark(),
     themeMode: themeMode,
+
+
     home: const Userlistscreen(),
     onGenerateRoute: (settings) {
     if (settings.name == '/user-detail') {
